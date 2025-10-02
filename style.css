@@ -1,0 +1,119 @@
+body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #1e1e2f, #2d2d44);
+      color: #f4f4f9;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 20px;
+    }
+
+    h1, h2 {
+      text-align: center;
+      color: #ffb347;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      color: #4fd1c5;
+    }
+
+    .card {
+      background: #2a2a3b;
+      border-radius: 16px;
+      padding: 20px;
+      margin: 20px 0;
+      width: 100%;
+      max-width: 800px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.6);
+    }
+
+    button {
+      background: #4fd1c5;
+      border: none;
+      padding: 10px 20px;
+      margin: 5px;
+      border-radius: 8px;
+      color: #1e1e2f;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    button:hover {
+      background: #38b2ac;
+      transform: scale(1.05);
+    }
+
+   
+    .quiz-question {
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+
+    .options {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .option {
+      background: #3b3b52;
+      padding: 10px;
+      margin: 5px 0;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .option:hover {
+      background: #4fd1c5;
+      color: #1e1e2f;
+    }
+
+    .carousel {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    .carousel img {
+      width: 100%;
+      max-width: 500px;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+    }
+
+    .carousel button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: #ffb347;
+    }
+
+    .carousel .prev { left: 10px; }
+    .carousel .next { right: 10px; }
+
+
+    #joke {
+      margin-top: 15px;
+      font-style: italic;
+      color: #d6bcfa;
+    }
+
+    @media (max-width: 600px) {
+      .card {
+        padding: 15px;
+      }
+      h1 { font-size: 24px; }
+    }
