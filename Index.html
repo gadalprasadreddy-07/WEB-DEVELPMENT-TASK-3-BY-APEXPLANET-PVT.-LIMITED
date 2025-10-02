@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Third Task In ApexPlanet Internship</title>
+  <link rel="stylesheet" href="style.css"/>
+ 
+</head>
+<body>
+  <h1>🌟 Advanced Styling & JavaScript 🌟</h1>
+
+ 
+  <div class="card">
+    <h2>Responsive Design</h2>
+    <p>This text and layout adapt to screen size. Resize the browser!</p>
+  </div>
+
+  <div class="card">
+    <h2>Interactive Quiz</h2>
+    <div class="quiz-question" id="quiz-question">What does CSS stand for?</div>
+    <div class="options" id="quiz-options"></div>
+    <button onclick="nextQuestion()">Next</button>
+  </div>
+
+  
+  <div class="card">
+    <h2>Image Carousel</h2>
+    <div class="carousel">
+      <button class="prev" onclick="prevImage()">⏮</button>
+      <img id="carousel-image" src="https://picsum.photos/500/300?random=1" alt="carousel">
+      <button class="next" onclick="nextImage()">⏭</button>
+    </div>
+  </div>
+
+ 
+  <div class="card">
+    <h2>Fetch Joke from API</h2>
+    <button onclick="fetchJoke()">Get Random Joke 😂</button>
+    <p id="joke">Click the button to see a joke!</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
